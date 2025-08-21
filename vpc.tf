@@ -1,10 +1,10 @@
-# Create VPC
+# VPC
 resource "aws_vpc" "my_vpc" {
   cidr_block = var.vpc_cidr
   tags = { Name = "MyVPC" }
 }
 
-# Create Subnet
+# Subnet
 resource "aws_subnet" "my_subnet" {
   vpc_id            = aws_vpc.my_vpc.id
   cidr_block        = var.subnet_cidr
@@ -12,13 +12,13 @@ resource "aws_subnet" "my_subnet" {
   tags = { Name = "MySubnet" }
 }
 
-# Internet Gateway
+# Gateway
 resource "aws_internet_gateway" "my_igw" {
   vpc_id = aws_vpc.my_vpc.id
   tags   = { Name = "MyIGW" }
 }
 
-# Route Table
+# Table
 resource "aws_route_table" "my_rt" {
   vpc_id = aws_vpc.my_vpc.id
 
