@@ -21,6 +21,7 @@ terraform apply -auto-approve
 terraform destroy -auto-approve
 
 Project Structure
+
 provider.tf → Configures the AWS provider (region, credentials).
 variables.tf → Defines input variables (region, instance type, etc.).
 terraform.tfvars → Stores values for the variables.
@@ -29,6 +30,7 @@ ec2.tf → Creates an EC2 instance in the VPC.
 outputs.tf → Prints useful information like instance public IP.
 
 References
+
 Terraform AWS Provider Docs.
 Terraform CLI Commands.
 
