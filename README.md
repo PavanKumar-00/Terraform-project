@@ -5,7 +5,7 @@ This project uses **Terraform** to provision AWS infrastructure including:
 - An EC2 instance
 - Configurable variables for easy customization
 
- Prerequisites
+ # Prerequisites
 - An AWS account
 - AWS CLI installed and configured 
 - Terraform v1.x installed in system
@@ -20,7 +20,7 @@ terraform apply -auto-approve
 
 terraform destroy -auto-approve
 
-Project Structure
+# Project Structure
 
 provider.tf → Configures the AWS provider (region, credentials).
 variables.tf → Defines input variables (region, instance type, etc.).
@@ -29,7 +29,7 @@ vpc.tf → Creates VPC, subnets, internet gateway, route tables.
 ec2.tf → Creates an EC2 instance in the VPC.
 outputs.tf → Prints useful information like instance public IP.
 
-References
+# References
 
 Terraform AWS Provider Docs.
 Terraform CLI Commands.
