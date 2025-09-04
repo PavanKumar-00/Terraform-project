@@ -11,9 +11,13 @@ This project uses **Terraform** to provision AWS infrastructure including:
 - Terraform v1.x installed in system
 
 terraform init
+
 terraform validate
+
 terraform plan
+
 terraform apply -auto-approve
+
 terraform destroy -auto-approve
 
 Project Structure
